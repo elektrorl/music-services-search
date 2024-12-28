@@ -1,3 +1,4 @@
+![Music Services Search Icon](icons/music-services-search-icon.png)
 # Music Services Search
 **Music Services Search** is a powerful and intuitive tool designed to elevate your online music discovery experience. With just a right-click, you can instantly search for tracks on Spotify, YouTube, YouTube Music, and Bandcamp.
 ### Features
