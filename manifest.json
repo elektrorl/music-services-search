@@ -1,0 +1,21 @@
+{
+      "manifest_version": 3,
+      "name": "Music services search",
+      "version": "1.0",
+      "description": "Search selected text on Spotify, YouTube, YouTube Music, and Bandcamp.",
+      "permissions": [
+        "contextMenus",
+        "activeTab",
+        "storage"
+      ],
+      "background": {
+        "service_worker": "background.js"
+      },
+      "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+      },
+      "options_page": "options.html",
+      "author": "Aurélien Goulet"
+    }
