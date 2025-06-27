@@ -1,0 +1,3 @@
+Ce fichier est un espace réservé pour le fichier Affinity Designer de l'icône de l'extension Music Services Search.
+
+Ce fichier doit être remplacé par le véritable fichier .afdesign si disponible.
