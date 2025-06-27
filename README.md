@@ -24,3 +24,4 @@ To use this extension in Chrome, follow these steps to load it as an unpacked ex
     - Customize the settings as needed and start discovering music effortlessly!
 ---
 Feel free to open an issue or submit a pull request if you have suggestions or encounter any issues!
+elektrorl
