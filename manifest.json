@@ -3,11 +3,7 @@
   "name": "Music services search",
   "version": "1.0",
   "description": "Search selected text on Spotify, YouTube, YouTube Music, and Bandcamp.",
-  "permissions": [
-    "contextMenus",
-    "activeTab",
-    "storage"
-  ],
+  "permissions": ["contextMenus", "activeTab", "storage"],
   "background": {
     "service_worker": "background.js"
   },

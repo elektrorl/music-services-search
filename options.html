@@ -1,57 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Options</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="options.css">
-</head>
-<body>
-  <div class="container">
-    <h1>Spotify Contextual Search Options</h1>
-    <div class="services">
-      <h2>Enable Services</h2>
-      <label>
-        <input type="checkbox" name="service" value="spotifySearch" checked>
-        <img src="icons/spotify-icon.png" alt="Spotify Icon" width="16"> Spotify
-      </label>
-      <label>
-        <input type="checkbox" name="service" value="youtubeSearch" checked>
-        <img src="icons/youtube-icon.png" alt="YouTube Icon" width="16"> YouTube
-      </label>
-      <label>
-        <input type="checkbox" name="service" value="youtubeMusicSearch" checked>
-        <img src="icons/youtube-music-icon.png" alt="YouTube Music Icon" width="16"> YouTube Music
-      </label>
-      <label>
-        <input type="checkbox" name="service" value="bandcampSearch" checked>
-        <img src="icons/bandcamp-icon.png" alt="Bandcamp Icon" width="16"> Bandcamp
-      </label>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Options</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Spotify Contextual Search Options</h1>
+      <div class="services">
+        <h2>Enable Services</h2>
+        <label>
+          <input type="checkbox" name="service" value="spotifySearch" checked />
+          <img src="icons/spotify-icon.png" alt="Spotify Icon" width="16" />
+          Spotify
+        </label>
+        <label>
+          <input type="checkbox" name="service" value="youtubeSearch" checked />
+          <img src="icons/youtube-icon.png" alt="YouTube Icon" width="16" />
+          YouTube
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="service"
+            value="youtubeMusicSearch"
+            checked />
+          <img
+            src="icons/youtube-music-icon.png"
+            alt="YouTube Music Icon"
+            width="16" />
+          YouTube Music
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="service"
+            value="bandcampSearch"
+            checked />
+          <img src="icons/bandcamp-icon.png" alt="Bandcamp Icon" width="16" />
+          Bandcamp
+        </label>
+      </div>
+      <div class="options">
+        <h2>Spotify Preferences</h2>
+        <label>
+          <input type="radio" name="searchPreference" value="web" checked />
+          Web Player
+        </label>
+        <label>
+          <input type="radio" name="searchPreference" value="desktop" />
+          Desktop App
+        </label>
+      </div>
+      <footer>
+        <p>
+          We value your feedback! For bugs or suggestions, contact us at
+          <span id="email"></span>. Thank you for helping us improve!
+        </p>
+        <p>
+          Photo de
+          <a
+            href="https://unsplash.com/fr/@martz90?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Martin Martz</a
+          >
+          sur
+          <a
+            href="https://unsplash.com/fr/photos/un-fond-abstrait-bleu-avec-des-lignes-ondulees-rMRT4hF-Fsg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Unsplash</a
+          >
+        </p>
+      </footer>
     </div>
-    <div class="options">
-      <h2>Spotify Preferences</h2>
-      <label>
-        <input type="radio" name="searchPreference" value="web" checked>
-        Web Player
-      </label>
-      <label>
-        <input type="radio" name="searchPreference" value="desktop">
-        Desktop App
-      </label>
-    </div>
-    <footer>
-      <p>We value your feedback! For bugs or suggestions, contact us at <span id="email"></span>. Thank you for helping
-        us improve!</p>
-      <p>Photo de <a
-          href="https://unsplash.com/fr/@martz90?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Martin
-          Martz</a> sur <a
-          href="https://unsplash.com/fr/photos/un-fond-abstrait-bleu-avec-des-lignes-ondulees-rMRT4hF-Fsg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-      </p>
-    </footer>
-  </div>
-  <script src="options.js"></script>
-</body>
+    <script src="options.js"></script>
+  </body>
 </html>
