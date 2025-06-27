@@ -1,0 +1,146 @@
+{
+  "extensionName": {
+    "message": "Music Services Search",
+    "description": "Nom de l'extension"
+  },
+  "extensionDescription": {
+    "message": "Recherchez du texte sélectionné sur Spotify, YouTube, YouTube Music et Bandcamp.",
+    "description": "Description de l'extension"
+  },
+  "optionsTitle": {
+    "message": "Recherche Services Musicaux - Options",
+    "description": "Titre de la page d'options"
+  },
+  "optionsHeader": {
+    "message": "Options de Music Services Search",
+    "description": "En-tête de la page d'options"
+  },
+  "enableServices": {
+    "message": "Activer les services",
+    "description": "Titre de section pour activer les services"
+  },
+  "spotifyLabel": {
+    "message": "Spotify",
+    "description": "Libellé pour le service Spotify"
+  },
+  "youtubeLabel": {
+    "message": "YouTube",
+    "description": "Libellé pour le service YouTube"
+  },
+  "youtubeMusicLabel": {
+    "message": "YouTube Music",
+    "description": "Libellé pour le service YouTube Music"
+  },
+  "bandcampLabel": {
+    "message": "Bandcamp",
+    "description": "Libellé pour le service Bandcamp"
+  },
+  "spotifyPreferences": {
+    "message": "Préférences Spotify",
+    "description": "Titre de section pour les préférences Spotify"
+  },
+  "webPlayer": {
+    "message": "Lecteur Web",
+    "description": "Libellé pour l'option lecteur web"
+  },
+  "desktopApp": {
+    "message": "Application de Bureau",
+    "description": "Libellé pour l'option application de bureau"
+  },
+  "feedbackText": {
+    "message": "Nous apprécions vos commentaires ! Pour les bugs ou suggestions, contactez-nous à",
+    "description": "Message de retour d'information dans le pied de page"
+  },
+  "feedbackThanks": {
+    "message": "Merci de nous aider à améliorer !",
+    "description": "Message de remerciement dans le pied de page"
+  },
+  "photoBy": {
+    "message": "Photo de",
+    "description": "Texte de crédit photo"
+  },
+  "photoOn": {
+    "message": "sur",
+    "description": "Source de crédit photo"
+  },
+  "privacyPolicy": {
+    "message": "Politique de Confidentialité",
+    "description": "Texte du lien de politique de confidentialité"
+  },
+  "backToOptions": {
+    "message": "← Retour aux Options",
+    "description": "Texte du lien de retour aux options"
+  },
+  "searchOnSpotify": {
+    "message": "Rechercher sur Spotify",
+    "description": "Élément du menu contextuel Rechercher sur Spotify"
+  },
+  "searchOnYoutube": {
+    "message": "Rechercher sur YouTube",
+    "description": "Élément du menu contextuel Rechercher sur YouTube"
+  },
+  "searchOnYoutubeMusic": {
+    "message": "Rechercher sur YouTube Music",
+    "description": "Élément du menu contextuel Rechercher sur YouTube Music"
+  },
+  "searchOnBandcamp": {
+    "message": "Rechercher sur Bandcamp",
+    "description": "Élément du menu contextuel Rechercher sur Bandcamp"
+  },
+  "privacyPolicyTitle": {
+    "message": "Music Services Search - Politique de Confidentialité",
+    "description": "Titre de la page de politique de confidentialité"
+  },
+  "privacyPolicyHeader": {
+    "message": "Politique de Confidentialité",
+    "description": "En-tête de la page de politique de confidentialité"
+  },
+  "introductionHeader": {
+    "message": "Introduction",
+    "description": "En-tête d'introduction de la politique de confidentialité"
+  },
+  "introductionText": {
+    "message": "Merci d'avoir choisi Music Services Search. Cette politique de confidentialité est conçue pour vous aider à comprendre comment notre extension de navigateur collecte, utilise et protège vos informations. Nous prenons votre vie privée au sérieux et nous nous engageons à protéger vos informations personnelles.",
+    "description": "Texte d'introduction de la politique de confidentialité"
+  },
+  "informationCollectedHeader": {
+    "message": "Informations que nous collectons",
+    "description": "En-tête des informations collectées de la politique de confidentialité"
+  },
+  "informationCollectedIntro": {
+    "message": "L'extension Music Services Search collecte et stocke les informations suivantes :",
+    "description": "Texte d'introduction des informations collectées"
+  },
+  "informationCollectedServices": {
+    "message": "Vos préférences concernant les services musicaux que vous souhaitez activer (Spotify, YouTube, YouTube Music, Bandcamp)",
+    "description": "Élément 1 des informations collectées"
+  },
+  "informationCollectedSpotify": {
+    "message": "Votre préférence pour l'utilisation du lecteur web ou de l'application de bureau de Spotify",
+    "description": "Élément 2 des informations collectées"
+  },
+  "informationStorageNotice": {
+    "message": "Important : Ces informations sont stockées localement sur votre appareil à l'aide de l'API de synchronisation de stockage de Chrome. Elles ne sont pas transmises à nos serveurs ou à des tiers.",
+    "description": "Avis de stockage de la politique de confidentialité"
+  },
+  "howWeUseInfoHeader": {
+    "message": "Comment nous utilisons vos informations",
+    "description": "En-tête d'utilisation de la politique de confidentialité"
+  },
+  "howWeUseInfoIntro": {
+    "message": "Les préférences que vous définissez sont utilisées uniquement pour :",
+    "description": "Introduction à l'utilisation des informations"
+  },
+  "howWeUseInfoItem1": {
+    "message": "Se souvenir des services musicaux que vous souhaitez voir apparaître dans votre menu contextuel",
+    "description": "Élément 1 de l'utilisation des informations"
+  },
+  "howWeUseInfoItem2": {
+    "message": "Diriger vos recherches musicales vers le lecteur web ou l'application de bureau de Spotify selon votre préférence",
+    "description": "Élément 2 de l'utilisation des informations"
+  },
+  "howWeUseInfoOutro": {
+    "message": "Nous n'utilisons pas ces informations à d'autres fins, telles que le suivi, le profilage ou la publicité.",
+    "description": "Conclusion de l'utilisation des informations"
+  }
+}

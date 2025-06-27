@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="privacyPolicyTitle">
+      Music Services Search - Privacy Policy
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="options.css" />
+    <style>
+      .container {
+        max-width: 800px;
+        text-align: left;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #f0ebd8;
+      }
+      .policy-content {
+        margin-top: 20px;
+        line-height: 1.6;
+      }
+      .policy-section {
+        margin-bottom: 30px;
+      }
+      .back-link {
+        margin-top: 30px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 data-i18n="privacyPolicyHeader">Privacy Policy</h1>
+
+      <div class="policy-content">
+        <div class="policy-section">
+          <h2>Introduction</h2>
+          <p>
+            Thank you for choosing Music Services Search. This Privacy Policy is
+            designed to help you understand how our browser extension collects,
+            uses, and safeguards your information. We take your privacy
+            seriously and are committed to protecting your personal information.
+          </p>
+        </div>
+
+        <div class="policy-section">
+          <h2>Information We Collect</h2>
+          <p>
+            The Music Services Search extension collects and stores the
+            following information:
+          </p>
+          <ul>
+            <li>
+              Your preferences regarding which music services you wish to enable
+              (Spotify, YouTube, YouTube Music, Bandcamp)
+            </li>
+            <li>
+              Your preference for using Spotify's web player or desktop
+              application
+            </li>
+          </ul>
+          <p>
+            <strong>Important:</strong> This information is stored locally on
+            your device using Chrome's storage sync API. It is not transmitted
+            to our servers or any third parties.
+          </p>
+        </div>
+
+        <div class="policy-section">
+          <h2>How We Use Your Information</h2>
+          <p>The preferences you set are used solely to:</p>
+          <ul>
+            <li>
+              Remember which music services you want to appear in your context
+              menu
+            </li>
+            <li>
+              Direct your music searches to either Spotify's web player or
+              desktop application based on your preference
+            </li>
+          </ul>
+          <p>
+            We do not use this information for any other purpose, such as
+            tracking, profiling, or advertising.
+          </p>
+        </div>
+
+        <div class="policy-section">
+          <h2>Text Selection</h2>
+          <p>
+            When you select text and use our context menu to search, the
+            selected text is processed only to construct a search URL for your
+            chosen music service. This selected text is not stored by our
+            extension and is only used for the immediate search operation.
+          </p>
+        </div>
+
+        <div class="policy-section">
+          <h2>Third-Party Services</h2>
+          <p>
+            When you perform a search using our extension, you will be directed
+            to one of the following third-party services:
+          </p>
+          <ul>
+            <li>Spotify</li>
+            <li>YouTube</li>
+            <li>YouTube Music</li>
+            <li>Bandcamp</li>
+          </ul>
+          <p>
+            Please note that these third-party services have their own privacy
+            policies and terms of service. We encourage you to review their
+            policies as we have no control over how they collect or process your
+            information.
+          </p>
+        </div>
+
+        <div class="policy-section">
+          <h2>Data Security</h2>
+          <p>
+            Since all data is stored locally on your device, the security of
+            your information is protected by your browser's security measures.
+            We do not collect, transmit, or store any of your information on
+            remote servers.
+          </p>
+        </div>
+
+        <div class="policy-section">
+          <h2>Changes to This Privacy Policy</h2>
+          <p>
+            We may update our Privacy Policy from time to time. We will notify
+            you of any changes by updating the new Privacy Policy on this page.
+            You are advised to review this Privacy Policy periodically for any
+            changes.
+          </p>
+        </div>
+
+        <div class="policy-section">
+          <h2>Contact Us</h2>
+          <p>
+            If you have any questions about this Privacy Policy, please contact
+            us at:
+            <span id="email"></span>
+          </p>
+        </div>
+
+        <a href="options.html" class="back-link">← Back to Options</a>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Email obfuscation logic
+        const emailElement = document.getElementById('email');
+        const emailUser = 'elektrorl';
+        const emailDomain = 'gmail.com';
+        const email = `${emailUser}@${emailDomain}`;
+        emailElement.innerHTML = `<a href="mailto:${email}">${email}</a>`;
+      });
+    </script>
+    <script src="i18n.js"></script>
+  </body>
+</html>

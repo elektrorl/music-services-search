@@ -1,0 +1,146 @@
+{
+  "extensionName": {
+    "message": "Music Services Search",
+    "description": "Name of the extension"
+  },
+  "extensionDescription": {
+    "message": "Search selected text on Spotify, YouTube, YouTube Music, and Bandcamp.",
+    "description": "Description of the extension"
+  },
+  "optionsTitle": {
+    "message": "Music Services Search - Options",
+    "description": "Title of the options page"
+  },
+  "optionsHeader": {
+    "message": "Music Services Search Options",
+    "description": "Header of the options page"
+  },
+  "enableServices": {
+    "message": "Enable Services",
+    "description": "Section title for enabling services"
+  },
+  "spotifyLabel": {
+    "message": "Spotify",
+    "description": "Label for Spotify service"
+  },
+  "youtubeLabel": {
+    "message": "YouTube",
+    "description": "Label for YouTube service"
+  },
+  "youtubeMusicLabel": {
+    "message": "YouTube Music",
+    "description": "Label for YouTube Music service"
+  },
+  "bandcampLabel": {
+    "message": "Bandcamp",
+    "description": "Label for Bandcamp service"
+  },
+  "spotifyPreferences": {
+    "message": "Spotify Preferences",
+    "description": "Section title for Spotify preferences"
+  },
+  "webPlayer": {
+    "message": "Web Player",
+    "description": "Label for web player option"
+  },
+  "desktopApp": {
+    "message": "Desktop App",
+    "description": "Label for desktop app option"
+  },
+  "feedbackText": {
+    "message": "We value your feedback! For bugs or suggestions, contact us at",
+    "description": "Feedback message in the footer"
+  },
+  "feedbackThanks": {
+    "message": "Thank you for helping us improve!",
+    "description": "Thank you message in the footer"
+  },
+  "photoBy": {
+    "message": "Photo by",
+    "description": "Photo credit text"
+  },
+  "photoOn": {
+    "message": "on",
+    "description": "Photo credit source"
+  },
+  "privacyPolicy": {
+    "message": "Privacy Policy",
+    "description": "Privacy Policy link text"
+  },
+  "backToOptions": {
+    "message": "← Back to Options",
+    "description": "Back to options link text"
+  },
+  "searchOnSpotify": {
+    "message": "Search on Spotify",
+    "description": "Search on Spotify context menu item"
+  },
+  "searchOnYoutube": {
+    "message": "Search on YouTube",
+    "description": "Search on YouTube context menu item"
+  },
+  "searchOnYoutubeMusic": {
+    "message": "Search on YouTube Music",
+    "description": "Search on YouTube Music context menu item"
+  },
+  "searchOnBandcamp": {
+    "message": "Search on Bandcamp",
+    "description": "Search on Bandcamp context menu item"
+  },
+  "privacyPolicyTitle": {
+    "message": "Music Services Search - Privacy Policy",
+    "description": "Title of the privacy policy page"
+  },
+  "privacyPolicyHeader": {
+    "message": "Privacy Policy",
+    "description": "Header of the privacy policy page"
+  },
+  "introductionHeader": {
+    "message": "Introduction",
+    "description": "Privacy policy introduction header"
+  },
+  "introductionText": {
+    "message": "Thank you for choosing Music Services Search. This Privacy Policy is designed to help you understand how our browser extension collects, uses, and safeguards your information. We take your privacy seriously and are committed to protecting your personal information.",
+    "description": "Privacy policy introduction text"
+  },
+  "informationCollectedHeader": {
+    "message": "Information We Collect",
+    "description": "Privacy policy information collected header"
+  },
+  "informationCollectedIntro": {
+    "message": "The Music Services Search extension collects and stores the following information:",
+    "description": "Privacy policy information collected intro text"
+  },
+  "informationCollectedServices": {
+    "message": "Your preferences regarding which music services you wish to enable (Spotify, YouTube, YouTube Music, Bandcamp)",
+    "description": "Privacy policy information collected item 1"
+  },
+  "informationCollectedSpotify": {
+    "message": "Your preference for using Spotify's web player or desktop application",
+    "description": "Privacy policy information collected item 2"
+  },
+  "informationStorageNotice": {
+    "message": "Important: This information is stored locally on your device using Chrome's storage sync API. It is not transmitted to our servers or any third parties.",
+    "description": "Privacy policy storage notice"
+  },
+  "howWeUseInfoHeader": {
+    "message": "How We Use Your Information",
+    "description": "Privacy policy how we use header"
+  },
+  "howWeUseInfoIntro": {
+    "message": "The preferences you set are used solely to:",
+    "description": "Privacy policy how we use intro"
+  },
+  "howWeUseInfoItem1": {
+    "message": "Remember which music services you want to appear in your context menu",
+    "description": "Privacy policy how we use item 1"
+  },
+  "howWeUseInfoItem2": {
+    "message": "Direct your music searches to either Spotify's web player or desktop application based on your preference",
+    "description": "Privacy policy how we use item 2"
+  },
+  "howWeUseInfoOutro": {
+    "message": "We do not use this information for any other purpose, such as tracking, profiling, or advertising.",
+    "description": "Privacy policy how we use outro"
+  }
+}

@@ -1,8 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Music services search",
+  "name": "__MSG_extensionName__",
   "version": "1.0",
-  "description": "Search selected text on Spotify, YouTube, YouTube Music, and Bandcamp.",
+  "description": "__MSG_extensionDescription__",
+  "default_locale": "en",
   "permissions": ["contextMenus", "activeTab", "storage"],
   "background": {
     "service_worker": "background.js"
@@ -11,5 +12,9 @@
     "512": "icons/music-services-search-icon.png"
   },
   "options_page": "options.html",
-  "author": "Aurélien Goulet"
+  "author": "Aurélien Goulet",
+  "privacy_policy_url": "https://yourdomain.com/privacy-policy.html",
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com"
+  }
 }

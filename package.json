@@ -1,0 +1,28 @@
+{
+  "name": "music-services-search",
+  "version": "1.0.0",
+  "description": "Chrome extension to search selected text on music services",
+  "main": "background.js",
+  "scripts": {
+    "test": "jest",
+    "test:stable": "jest --testPathIgnorePatterns \"background.test.js|integration.test.js\"",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "chrome-extension",
+    "music",
+    "search"
+  ],
+  "author": "Aurélien Goulet",
+  "license": "GPL-2.0",
+  "devDependencies": {
+    "@babel/core": "^7.23.5",
+    "@babel/preset-env": "^7.23.5",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "jest-chrome": "^0.8.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jsdom": "^22.1.0"
+  }
+}

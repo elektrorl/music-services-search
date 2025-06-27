@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Options</title>
+    <title data-i18n="optionsTitle">Music Services Search - Options</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet" />
@@ -11,18 +11,18 @@
   </head>
   <body>
     <div class="container">
-      <h1>Spotify Contextual Search Options</h1>
+      <h1 data-i18n="optionsHeader">Music Services Search Options</h1>
       <div class="services">
-        <h2>Enable Services</h2>
+        <h2 data-i18n="enableServices">Enable Services</h2>
         <label>
           <input type="checkbox" name="service" value="spotifySearch" checked />
           <img src="icons/spotify-icon.png" alt="Spotify Icon" width="16" />
-          Spotify
+          <span data-i18n="spotifyLabel">Spotify</span>
         </label>
         <label>
           <input type="checkbox" name="service" value="youtubeSearch" checked />
           <img src="icons/youtube-icon.png" alt="YouTube Icon" width="16" />
-          YouTube
+          <span data-i18n="youtubeLabel">YouTube</span>
         </label>
         <label>
           <input
@@ -34,7 +34,7 @@
             src="icons/youtube-music-icon.png"
             alt="YouTube Music Icon"
             width="16" />
-          YouTube Music
+          <span data-i18n="youtubeMusicLabel">YouTube Music</span>
         </label>
         <label>
           <input
@@ -43,32 +43,43 @@
             value="bandcampSearch"
             checked />
           <img src="icons/bandcamp-icon.png" alt="Bandcamp Icon" width="16" />
-          Bandcamp
+          <span data-i18n="bandcampLabel">Bandcamp</span>
         </label>
       </div>
       <div class="options">
-        <h2>Spotify Preferences</h2>
+        <h2 data-i18n="spotifyPreferences">Spotify Preferences</h2>
         <label>
           <input type="radio" name="searchPreference" value="web" checked />
-          Web Player
+          <span data-i18n="webPlayer">Web Player</span>
         </label>
         <label>
           <input type="radio" name="searchPreference" value="desktop" />
-          Desktop App
+          <span data-i18n="desktopApp">Desktop App</span>
         </label>
       </div>
       <footer>
         <p>
-          We value your feedback! For bugs or suggestions, contact us at
-          <span id="email"></span>. Thank you for helping us improve!
+          <span data-i18n="feedbackText"
+            >We value your feedback! For bugs or suggestions, contact us
+            at</span
+          >
+          <span id="email"></span>.
+          <span data-i18n="feedbackThanks"
+            >Thank you for helping us improve!</span
+          >
         </p>
         <p>
-          Photo de
+          <a href="privacy-policy.html" data-i18n="privacyPolicy"
+            >Privacy Policy</a
+          >
+        </p>
+        <p>
+          <span data-i18n="photoBy">Photo by</span>
           <a
             href="https://unsplash.com/fr/@martz90?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
             >Martin Martz</a
           >
-          sur
+          <span data-i18n="photoOn">on</span>
           <a
             href="https://unsplash.com/fr/photos/un-fond-abstrait-bleu-avec-des-lignes-ondulees-rMRT4hF-Fsg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
             >Unsplash</a
@@ -76,6 +87,7 @@
         </p>
       </footer>
     </div>
+    <script src="i18n.js"></script>
     <script src="options.js"></script>
   </body>
 </html>

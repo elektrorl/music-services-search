@@ -23,5 +23,34 @@ To use this extension in Chrome, follow these steps to load it as an unpacked ex
     - Once loaded, the extension will appear in your toolbar or in the Extensions menu.
     - Customize the settings as needed and start discovering music effortlessly!
 ---
+## Development
+
+### Running Tests
+This extension includes an automated test suite using Jest. To run the tests:
+
+1. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Run Tests:**
+   ```bash
+   npm test
+   ```
+
+3. **Run Tests in Watch Mode** (for development):
+   ```bash
+   npm run test:watch
+   ```
+
+### Test Coverage
+The test suite includes:
+- Unit tests for background script functionality
+- Unit tests for options page behavior
+- Tests for internationalization (i18n) 
+- Query string cleaning and sanitization tests
+- Integration tests simulating user interactions
+
 Feel free to open an issue or submit a pull request if you have suggestions or encounter any issues!
+
 elektrorl
