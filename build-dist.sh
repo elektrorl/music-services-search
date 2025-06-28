@@ -40,6 +40,7 @@ FILES_TO_COPY=(
     "privacy-policy.html"
     "LICENSE"
     "README.md"
+    "README-FR.md"
 )
 
 # Copier les fichiers individuels
