@@ -1,0 +1,527 @@
+/* popup.css - Style inspiré de OpenAI/Gemini pour Music Services Search */
+
+:root
+{
+  /* Palette de couleurs inspirée du bleu pétrole #214c58 */
+  --bg-color: #ffffff;
+  --bg-secondary: #f7fafb;
+  --accent-color: #214c58;
+  /* Bleu pétrole principal */
+  --accent-light: #466772;
+  /* Version plus claire */
+  --accent-dark: #1b343b;
+  /* Version plus foncée pour les hovers */
+  --text-primary: #1a2224;
+  --text-secondary: #5f6b6e;
+  --border-color: #e5ebed;
+  --success-color: #26505c;
+  --danger-color: #b56c60;
+  --hover-bg: rgba(33, 76, 88, 0.08);
+
+  /* Variables pour les transitions et animations */
+  --transition-speed: 0.2s;
+  --shadow-sm: 0 1px 2px rgba(33, 76, 88, 0.05);
+  --shadow-md: 0 4px 6px rgba(33, 76, 88, 0.05), 0 1px 3px rgba(33, 76, 88, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(33, 76, 88, 0.1), 0 4px 6px -2px rgba(33, 76, 88, 0.05);
+  --border-radius: 8px;
+}
+
+/* Styles pour le mode sombre si activé */
+@media (prefers-color-scheme: dark)
+{
+  :root
+  {
+    --bg-color: #121d20;
+    --bg-secondary: #17282e;
+    --accent-color: #214c58;
+    --accent-light: #466772;
+    --accent-dark: #2e5865;
+    --text-primary: #f7f9f9;
+    --text-secondary: #b2bfc4;
+    --border-color: #1e4049;
+    --hover-bg: rgba(33, 76, 88, 0.15);
+  }
+}
+
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  width: 360px;
+  overflow-x: hidden;
+  margin: 0;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+.container
+{
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+  max-height: 550px;
+  padding: 0;
+  box-shadow: var(--shadow-lg);
+  border-radius: var(--border-radius);
+}
+
+/* En-tête */
+header
+{
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--bg-color);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(8px);
+  background-image: linear-gradient(to bottom, rgba(33, 76, 88, 0.05), rgba(255, 255, 255, 0));
+}
+
+.logo
+{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo img
+{
+  border-radius: 10px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease;
+}
+
+.logo:hover img
+{
+  transform: scale(1.05);
+}
+
+h1
+{
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+h2
+{
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+
+/* Corps principal */
+main
+{
+  padding: 0;
+  overflow-y: auto;
+  flex-grow: 1;
+  scroll-behavior: smooth;
+}
+
+.panel
+{
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--bg-color);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+
+.panel.spotify-preferences
+{
+  padding-top: 14px;
+  padding-bottom: 12px;
+}
+
+.panel:hover
+{
+  background-color: var(--bg-secondary);
+}
+
+.panel h2
+{
+  position: relative;
+  display: inline-block;
+}
+
+.panel h2::after
+{
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: var(--accent-color);
+  border-radius: 1px;
+}
+
+.option-item
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 4px;
+  margin-bottom: 6px;
+  border-radius: var(--border-radius);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.compact-option
+{
+  padding: 6px 4px;
+  margin-bottom: 2px;
+}
+
+.option-item:hover
+{
+  background-color: var(--hover-bg);
+}
+
+.option-info
+{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.service-icon
+{
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.05));
+  transition: transform 0.2s ease;
+}
+
+.option-item:hover .service-icon
+{
+  transform: scale(1.1);
+}
+
+/* Toggle switches - Style bleu pétrole */
+.toggle
+{
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 24px;
+}
+
+.toggle input
+{
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider
+{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--border-color);
+  border-radius: 34px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.toggle-slider:before
+{
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 1px 3px rgba(33, 76, 88, 0.15);
+  backdrop-filter: blur(3px);
+}
+
+input:checked + .toggle-slider
+{
+  background-color: #214c58;
+  /* Bleu pétrole exact comme demandé */
+}
+
+input:checked + .toggle-slider:before
+{
+  transform: translateX(22px);
+}
+
+input:focus + .toggle-slider,
+input:hover + .toggle-slider
+{
+  box-shadow: 0 0 1px #214c58, inset 0 1px 3px rgba(33, 76, 88, 0.05);
+}
+
+input:checked + .toggle-slider:before
+{
+  background-color: white;
+}
+
+/* Options radio pour Spotify */
+.spotify-preferences
+{
+  padding-bottom: 16px;
+}
+
+.spotify-preferences.compact
+{
+  padding-top: 18px;
+  padding-bottom: 16px;
+}
+
+.compact-option
+{
+  margin-bottom: 4px;
+  padding: 8px 4px;
+}
+
+/* Style pour les toggle de préférence */
+.preference-toggle input:checked + .toggle-slider
+{
+  background-color: #2e5865;
+  /* Version légèrement plus claire du bleu pétrole */
+}
+
+/* Animation réduite pour les toggles des préférences */
+.preference-toggle .toggle-slider:before
+{
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* On ne peut sélectionner qu'une seule préférence à la fois */
+.preference-toggle input:not(:checked) + .toggle-slider
+{
+  background-color: var(--border-color);
+}
+
+.radio-options
+{
+  display: flex;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.radio-card
+{
+  flex: 1;
+  cursor: pointer;
+}
+
+.radio-card input[type="radio"]
+{
+  position: absolute;
+  opacity: 0;
+}
+
+.radio-custom
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  background-color: var(--bg-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.radio-custom::after
+{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, var(--accent-color), var(--accent-light));
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+input[type="radio"]:checked + .radio-custom::after
+{
+  transform: scaleX(1);
+}
+
+.radio-icon
+{
+  margin-bottom: 10px;
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+}
+
+.radio-label
+{
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+}
+
+input[type="radio"]:checked + .radio-custom
+{
+  border-color: var(--accent-color);
+  background-color: var(--hover-bg);
+  box-shadow: 0 0 0 1px var(--accent-color);
+}
+
+input[type="radio"]:checked + .radio-custom .radio-icon,
+input[type="radio"]:checked + .radio-custom .radio-label
+{
+  color: var(--accent-color);
+}
+
+/* Animation de hover pour les cartes radio */
+.radio-custom:hover
+{
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Pied de page */
+footer
+{
+  padding: 10px 16px;
+  font-size: 11px;
+  color: var(--text-secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--border-color);
+  background-color: var(--bg-secondary);
+}
+
+.footer-links
+{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.separator
+{
+  font-size: 10px;
+  color: var(--text-secondary);
+}
+
+footer a
+{
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+
+footer a:hover
+{
+  color: var(--accent-dark);
+  text-decoration: underline;
+}
+
+.version
+{
+  color: var(--text-secondary);
+  font-size: 11px;
+}
+
+/* Animations */
+@keyframes fadeIn
+{
+  from
+  {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to
+  {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse
+{
+  0%
+  {
+    transform: scale(1);
+  }
+
+  50%
+  {
+    transform: scale(1.05);
+  }
+
+  100%
+  {
+    transform: scale(1);
+  }
+}
+
+.panel
+{
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.panel:nth-child(2)
+{
+  animation-delay: 0.05s;
+}
+
+/* Animation pour les changements d'état */
+.toggle-slider:active:before
+{
+  animation: pulse 0.3s ease-out;
+}
+
+input:checked + .toggle-slider:before
+{
+  animation: pulse 0.3s ease-out;
+}
+
+/* Style pour la barre de défilement */
+::-webkit-scrollbar
+{
+  width: 8px;
+}
+
+::-webkit-scrollbar-track
+{
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+  background-color: rgba(107, 114, 128, 0.3);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+  background-color: rgba(107, 114, 128, 0.5);
+}

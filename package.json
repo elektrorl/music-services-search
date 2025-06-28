@@ -5,7 +5,7 @@
   "main": "background.js",
   "scripts": {
     "test": "jest",
-    "test:stable": "jest --testPathIgnorePatterns \"background.test.js|integration.test.js\"",
+    "test:stable": "jest --testPathIgnorePatterns \"background.test.js|integration.test.js\" tests/popup.test.js tests/popup-i18n.test.js tests/popup-integration.test.js",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
   },

@@ -1,0 +1,28 @@
+# Distribution / packaging
+dist/
+*.zip
+
+# Node.js
+node_modules/
+coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Generated icons
+icons/music-services-search-icon-*.png

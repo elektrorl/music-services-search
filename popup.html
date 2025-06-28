@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="extensionName">Music Services Search</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <img
+            src="icons/music-services-search-icon.png"
+            alt="Music Services Search"
+            width="28"
+            height="28" />
+          <h1 data-i18n="extensionName">Music Services Search</h1>
+        </div>
+      </header>
+
+      <main>
+        <section class="panel">
+          <h2 data-i18n="enableServices">Enable Services</h2>
+
+          <div class="option-item">
+            <div class="option-info">
+              <img
+                src="icons/spotify-icon.png"
+                alt="Spotify"
+                class="service-icon" />
+              <span data-i18n="spotifyLabel">Spotify</span>
+            </div>
+            <label class="toggle">
+              <input
+                type="checkbox"
+                name="service"
+                value="spotifySearch"
+                checked />
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+
+          <div class="option-item">
+            <div class="option-info">
+              <img
+                src="icons/youtube-icon.png"
+                alt="YouTube"
+                class="service-icon" />
+              <span data-i18n="youtubeLabel">YouTube</span>
+            </div>
+            <label class="toggle">
+              <input
+                type="checkbox"
+                name="service"
+                value="youtubeSearch"
+                checked />
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+
+          <div class="option-item">
+            <div class="option-info">
+              <img
+                src="icons/youtube-music-icon.png"
+                alt="YouTube Music"
+                class="service-icon" />
+              <span data-i18n="youtubeMusicLabel">YouTube Music</span>
+            </div>
+            <label class="toggle">
+              <input
+                type="checkbox"
+                name="service"
+                value="youtubeMusicSearch"
+                checked />
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+
+          <div class="option-item">
+            <div class="option-info">
+              <img
+                src="icons/bandcamp-icon.png"
+                alt="Bandcamp"
+                class="service-icon" />
+              <span data-i18n="bandcampLabel">Bandcamp</span>
+            </div>
+            <label class="toggle">
+              <input
+                type="checkbox"
+                name="service"
+                value="bandcampSearch"
+                checked />
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+        </section>
+
+        <section class="panel spotify-preferences compact">
+          <h2 data-i18n="spotifyPreferences">Spotify Preferences</h2>
+
+          <div class="option-item compact-option">
+            <div class="option-info">
+              <span data-i18n="webPlayer">Web Player</span>
+            </div>
+            <label class="toggle preference-toggle">
+              <input
+                type="checkbox"
+                name="searchPreference"
+                value="web"
+                checked />
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+
+          <div class="option-item compact-option">
+            <div class="option-info">
+              <span data-i18n="desktopApp">Desktop App</span>
+            </div>
+            <label class="toggle preference-toggle">
+              <input type="checkbox" name="searchPreference" value="desktop" />
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer-links">
+          <a
+            href="privacy-policy.html"
+            target="_blank"
+            data-i18n="privacyPolicy"
+            >Privacy Policy</a
+          >
+          <span class="separator">•</span>
+          <a
+            href="https://github.com/elektrorl/music-services-search/issues"
+            target="_blank"
+            id="contact-link"
+            >Support</a
+          >
+        </div>
+        <div class="version">v1.0</div>
+      </footer>
+    </div>
+
+    <script src="i18n.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

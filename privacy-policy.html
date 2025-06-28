@@ -1,46 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title data-i18n="privacyPolicyTitle">
       Music Services Search - Privacy Policy
     </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet" />
-    <link rel="stylesheet" href="options.css" />
-    <style>
-      .container {
-        max-width: 800px;
-        text-align: left;
-      }
-      h1,
-      h2,
-      h3 {
-        color: #f0ebd8;
-      }
-      .policy-content {
-        margin-top: 20px;
-        line-height: 1.6;
-      }
-      .policy-section {
-        margin-bottom: 30px;
-      }
-      .back-link {
-        margin-top: 30px;
-        display: inline-block;
-      }
-    </style>
+    <link rel="stylesheet" href="privacy-policy.css" />
+    <link
+      rel="icon"
+      href="icons/music-services-search-icon.png"
+      type="image/png" />
   </head>
   <body>
     <div class="container">
-      <h1 data-i18n="privacyPolicyHeader">Privacy Policy</h1>
+      <header>
+        <div class="logo-container">
+          <img
+            src="icons/music-services-search-icon.png"
+            alt="Music Services Search Logo" />
+          <h1 data-i18n="privacyPolicyHeader">Privacy Policy</h1>
+        </div>
+        <p class="header-description" data-i18n="privacyHeaderDesc">
+          How Music Services Search respects and protects your privacy
+        </p>
+      </header>
 
       <div class="policy-content">
         <div class="policy-section">
-          <h2>Introduction</h2>
-          <p>
+          <h2 data-i18n="introductionHeader">Introduction</h2>
+          <p data-i18n="introductionText">
             Thank you for choosing Music Services Search. This Privacy Policy is
             designed to help you understand how our browser extension collects,
             uses, and safeguards your information. We take your privacy
@@ -49,70 +43,88 @@
         </div>
 
         <div class="policy-section">
-          <h2>Information We Collect</h2>
-          <p>
+          <h2 data-i18n="informationCollectedHeader">Information We Collect</h2>
+          <p data-i18n="informationCollectedIntro">
             The Music Services Search extension collects and stores the
             following information:
           </p>
           <ul>
-            <li>
+            <li data-i18n="informationCollectedServices">
               Your preferences regarding which music services you wish to enable
               (Spotify, YouTube, YouTube Music, Bandcamp)
             </li>
-            <li>
+            <li data-i18n="informationCollectedSpotify">
               Your preference for using Spotify's web player or desktop
               application
             </li>
           </ul>
-          <p>
+          <p data-i18n="informationStorageNotice">
             <strong>Important:</strong> This information is stored locally on
-            your device using Chrome's storage sync API. It is not transmitted
-            to our servers or any third parties.
+            your device using Chrome's storage sync API. It is
+            <strong>not transmitted to our servers or any third parties</strong
+            >.
           </p>
         </div>
 
         <div class="policy-section">
-          <h2>How We Use Your Information</h2>
-          <p>The preferences you set are used solely to:</p>
+          <h2 data-i18n="howWeUseInfoHeader">How We Use Your Information</h2>
+          <p data-i18n="howWeUseInfoIntro">
+            The preferences you set are used solely to:
+          </p>
           <ul>
-            <li>
+            <li data-i18n="howWeUseInfoItem1">
               Remember which music services you want to appear in your context
               menu
             </li>
-            <li>
+            <li data-i18n="howWeUseInfoItem2">
               Direct your music searches to either Spotify's web player or
               desktop application based on your preference
             </li>
           </ul>
-          <p>
+          <p data-i18n="howWeUseInfoOutro">
             We do not use this information for any other purpose, such as
             tracking, profiling, or advertising.
           </p>
         </div>
 
         <div class="policy-section">
-          <h2>Text Selection</h2>
-          <p>
+          <h2 data-i18n="textSelectionHeader">Text Selection</h2>
+          <p data-i18n="textSelectionText">
             When you select text and use our context menu to search, the
             selected text is processed only to construct a search URL for your
-            chosen music service. This selected text is not stored by our
-            extension and is only used for the immediate search operation.
+            chosen music service. This selected text is
+            <strong>not stored</strong> by our extension and is only used for
+            the immediate search operation.
           </p>
+          <blockquote>
+            <p data-i18n="textSelectionExample">
+              Example: When you select "Daft Punk" and search with Spotify, we
+              simply open: https://open.spotify.com/search/Daft%20Punk
+            </p>
+          </blockquote>
         </div>
 
         <div class="policy-section">
-          <h2>Third-Party Services</h2>
-          <p>
+          <h2 data-i18n="thirdPartyServicesHeader">Third-Party Services</h2>
+          <p data-i18n="thirdPartyText">
             When you perform a search using our extension, you will be directed
             to one of the following third-party services:
           </p>
-          <ul>
-            <li>Spotify</li>
-            <li>YouTube</li>
-            <li>YouTube Music</li>
-            <li>Bandcamp</li>
+          <ul class="service-list">
+            <li data-i18n="spotifyDesc">
+              <strong>Spotify</strong> - Music streaming service
+            </li>
+            <li data-i18n="youtubeDesc">
+              <strong>YouTube</strong> - Video sharing platform
+            </li>
+            <li data-i18n="youtubeMusicDesc">
+              <strong>YouTube Music</strong> - Music streaming service by Google
+            </li>
+            <li data-i18n="bandcampDesc">
+              <strong>Bandcamp</strong> - Online music platform
+            </li>
           </ul>
-          <p>
+          <p data-i18n="thirdPartyNotice">
             Please note that these third-party services have their own privacy
             policies and terms of service. We encourage you to review their
             policies as we have no control over how they collect or process your
@@ -121,18 +133,32 @@
         </div>
 
         <div class="policy-section">
-          <h2>Data Security</h2>
-          <p>
+          <h2 data-i18n="dataSecurityHeader">Data Security</h2>
+          <p data-i18n="dataSecurityText">
             Since all data is stored locally on your device, the security of
             your information is protected by your browser's security measures.
             We do not collect, transmit, or store any of your information on
             remote servers.
           </p>
+          <div class="security-callout">
+            <p data-i18n="dataSecurityCallout">
+              <strong>Your data stays on your device</strong> — We believe in
+              privacy by design. Our extension operates without any data
+              collection servers.
+            </p>
+          </div>
+          <blockquote>
+            <p data-i18n="zeroDataApproach">
+              We designed Music Services Search with a "zero-data" approach.
+              Your preferences are saved locally in your browser, not in the
+              cloud.
+            </p>
+          </blockquote>
         </div>
 
         <div class="policy-section">
-          <h2>Changes to This Privacy Policy</h2>
-          <p>
+          <h2 data-i18n="changesHeader">Changes to This Privacy Policy</h2>
+          <p data-i18n="changesText">
             We may update our Privacy Policy from time to time. We will notify
             you of any changes by updating the new Privacy Policy on this page.
             You are advised to review this Privacy Policy periodically for any
@@ -141,27 +167,64 @@
         </div>
 
         <div class="policy-section">
-          <h2>Contact Us</h2>
-          <p>
-            If you have any questions about this Privacy Policy, please contact
-            us at:
-            <span id="email"></span>
+          <h2 data-i18n="contactHeader">Contact Us</h2>
+          <p data-i18n="contactText">
+            If you have any questions about this Privacy Policy or need
+            assistance with the extension, please:
           </p>
+          <p>
+            <a
+              href="https://github.com/elektrorl/music-services-search/issues"
+              class="issue-link"
+              target="_blank"
+              data-i18n="submitIssue"
+              >Submit an issue on GitHub</a
+            >
+          </p>
+          <blockquote>
+            <p data-i18n="feedbackHelp">
+              Your feedback helps us improve Music Services Search for everyone.
+              Thank you for taking the time to reach out!
+            </p>
+          </blockquote>
         </div>
-
-        <a href="options.html" class="back-link">← Back to Options</a>
       </div>
+
+      <footer>
+        <p data-i18n="copyrightText">Music Services Search &copy; 2025</p>
+      </footer>
     </div>
+    <script src="i18n.js"></script>
     <script>
+      // Animate elements on scroll for a more engaging experience
       document.addEventListener('DOMContentLoaded', () => {
-        // Email obfuscation logic
-        const emailElement = document.getElementById('email');
-        const emailUser = 'elektrorl';
-        const emailDomain = 'gmail.com';
-        const email = `${emailUser}@${emailDomain}`;
-        emailElement.innerHTML = `<a href="mailto:${email}">${email}</a>`;
+        const sections = document.querySelectorAll('.policy-section');
+
+        function checkScroll() {
+          sections.forEach((section) => {
+            const sectionTop = section.getBoundingClientRect().top;
+            const sectionBottom = section.getBoundingClientRect().bottom;
+            const isVisible =
+              sectionTop < window.innerHeight - 100 && sectionBottom > 0;
+
+            if (isVisible) {
+              section.style.opacity = '1';
+            }
+          });
+        }
+
+        // Set initial state
+        sections.forEach((section) => {
+          section.style.opacity = '0';
+          section.style.transition = 'opacity 0.5s ease-in-out';
+        });
+
+        // Check on load
+        setTimeout(checkScroll, 100);
+
+        // Check on scroll
+        window.addEventListener('scroll', checkScroll);
       });
     </script>
-    <script src="i18n.js"></script>
   </body>
 </html>

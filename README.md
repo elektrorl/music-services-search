@@ -53,4 +53,3 @@ The test suite includes:
 
 Feel free to open an issue or submit a pull request if you have suggestions or encounter any issues!
 
-elektrorl

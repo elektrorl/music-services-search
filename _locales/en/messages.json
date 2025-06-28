@@ -47,22 +47,6 @@
     "message": "Desktop App",
     "description": "Label for desktop app option"
   },
-  "feedbackText": {
-    "message": "We value your feedback! For bugs or suggestions, contact us at",
-    "description": "Feedback message in the footer"
-  },
-  "feedbackThanks": {
-    "message": "Thank you for helping us improve!",
-    "description": "Thank you message in the footer"
-  },
-  "photoBy": {
-    "message": "Photo by",
-    "description": "Photo credit text"
-  },
-  "photoOn": {
-    "message": "on",
-    "description": "Photo credit source"
-  },
   "privacyPolicy": {
     "message": "Privacy Policy",
     "description": "Privacy Policy link text"
