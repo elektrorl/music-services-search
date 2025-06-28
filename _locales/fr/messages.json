@@ -40,20 +40,20 @@
     "description": "Titre de section pour les préférences Spotify"
   },
   "webPlayer": {
-    "message": "Lecteur Web",
+    "message": "Lecteur web",
     "description": "Libellé pour l'option lecteur web"
   },
   "desktopApp": {
-    "message": "Application de Bureau",
+    "message": "Application de bureau",
     "description": "Libellé pour l'option application de bureau"
   },
 
   "privacyPolicy": {
-    "message": "Politique de Confidentialité",
+    "message": "Politique de confidentialité",
     "description": "Texte du lien de politique de confidentialité"
   },
   "backToOptions": {
-    "message": "← Retour aux Options",
+    "message": "← Retour aux options",
     "description": "Texte du lien de retour aux options"
   },
   "searchOnSpotify": {
@@ -73,11 +73,11 @@
     "description": "Élément du menu contextuel Rechercher sur Bandcamp"
   },
   "privacyPolicyTitle": {
-    "message": "Music Services Search - Politique de Confidentialité",
+    "message": "Music Services Search - Politique de confidentialité",
     "description": "Titre de la page de politique de confidentialité"
   },
   "privacyPolicyHeader": {
-    "message": "Politique de Confidentialité",
+    "message": "Politique de confidentialité",
     "description": "En-tête de la page de politique de confidentialité"
   },
   "introductionHeader": {
@@ -137,23 +137,23 @@
     "description": "Texte pour le bouton de retour"
   },
   "textSelectionHeader": {
-    "message": "Sélection de Texte",
+    "message": "Sélection de texte",
     "description": "En-tête de la section Sélection de Texte"
   },
   "thirdPartyServicesHeader": {
-    "message": "Services Tiers",
+    "message": "Services tiers",
     "description": "En-tête de la section Services Tiers"
   },
   "dataSecurityHeader": {
-    "message": "Sécurité des Données",
+    "message": "Sécurité des données",
     "description": "En-tête de la section Sécurité des Données"
   },
   "changesHeader": {
-    "message": "Modifications de Cette Politique",
+    "message": "Modifications de cette politique",
     "description": "En-tête de la section Modifications"
   },
   "contactHeader": {
-    "message": "Nous Contacter",
+    "message": "Nous contacter",
     "description": "En-tête de la section Nous Contacter"
   },
   "privacyHeaderDesc": {
